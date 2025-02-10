@@ -1,3 +1,16 @@
+# Jupyter Notebook Cache
+.ipynb_checkpoints/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# API keys and other not important files
+apikey.txt
+password.txt
 Google Chrome
 downloaded_files/
 flow_chart.pptx
