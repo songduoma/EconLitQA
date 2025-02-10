@@ -1,0 +1,16 @@
+pandas
+beautifulsoup4
+seleniumbase
+openpyxl
+auto-download-undetected-chromedriver
+numpy
+torch
+transformers
+subprocess32  # 若在 Windows，則可以省略這行
+langchain
+langchain-huggingface
+langchain-openai
+faiss-cpu  # 若使用 GPU，則改為 faiss-gpu
+scikit-learn
+sentence-transformers
+huggingface_hub
