@@ -93,7 +93,7 @@ Additionally, the project includes an **evaluation module** to assess response *
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/EconLitQA.git
+   git clone https://github.com/songduoma/EconLitQA.git
    cd EconLitQA
    ```
 
