@@ -53,15 +53,8 @@ Additionally, the project includes an **evaluation module** to assess response *
 │   ├── econlitqa_llama.ipynb               # EconLitQA using Meta-Llama
 │   ├── econlitqa_mistral.ipynb             # EconLitQA using Mistral
 │   └── dataset_keywords_generation.ipynb   # Keyword & question dataset generation
-├── src                                     # Core system modules
-│   ├── data_scraping.py                    # Data scraping module
-│   ├── data_preprocessing.py               # Data preprocessing module
-│   ├── econlitqa.py                        # Question-answering system core logic
-│   └── evaluation.py                        # Evaluation module (factuality & relevance)
 ├── .gitignore
-├── requirements.txt
-├── apikey.txt                              # OpenAI API key (configure separately)
-└── password.txt                            # HuggingFace API key (configure separately)
+└── requirements.txt
 ```
 
 ---
@@ -69,10 +62,10 @@ Additionally, the project includes an **evaluation module** to assess response *
 ## System Architecture & Workflow
 
 1. **Data Scraping**  
-   - Use `data_scraping.ipynb` (or `src/data_scraping.py`) to scrape articles from selected economic journals, storing results in `thesis_articles.xlsx`.
+   - Use `data_scraping.ipynb` to scrape articles from selected economic journals, storing results in `thesis_articles.xlsx`.
 
 2. **Data Preprocessing**  
-   - Run `data_preprocessing.ipynb` (or `src/data_preprocessing.py`) to clean and format the scraped data, producing `thesis_output.txt`.
+   - Run `data_preprocessing.ipynb`  to clean and format the scraped data, producing `thesis_output.txt`.
 
 3. **Vector Database Construction**  
    - The preprocessed articles are split into segments, and embeddings are generated using a vector database (e.g., FAISS) to enable efficient retrieval.
@@ -120,8 +113,8 @@ Additionally, the project includes an **evaluation module** to assess response *
 
 4. **Configure API Keys**
 
-   - Store your OpenAI API key in `apikey.txt`
-   - Store your HuggingFace API key in `password.txt`
+   - Create `apikey.txt` and Store your OpenAI API key in it
+   - Create `password.txt` and store your HuggingFace API key in it
 
    > **Note:** These files should remain private. Add them to `.gitignore` to prevent accidental exposure.
 
@@ -132,12 +125,10 @@ Additionally, the project includes an **evaluation module** to assess response *
 ### Data Scraping
 
 - **Notebook**: Open `notebooks/data_scraping.ipynb` and run the scraping process.
-- **Command-line**: Execute `src/data_scraping.py`  to scrape data and store results in `thesis_articles.xlsx`.
 
 ### Data Preprocessing
 
 - **Notebook**: Open `notebooks/data_preprocessing.ipynb` to process the raw Excel file and generate `thesis_output.txt`.
-- **Command-line**: Run `src/data_preprocessing.py` for data cleaning and formatting.
 
 ### Question-Answering System
 
@@ -152,7 +143,6 @@ These notebooks demonstrate the complete workflow, from keyword extraction to se
 ### Keyword Dataset Generation
 
 - **Notebook**: Open `notebooks/dataset_keywords_generation.ipynb` to generate a dataset containing questions and their corresponding keywords, saved as `econ_questions_keywords.csv`.
-- **Command-line**:Run `src/dataset_keywords_generation.py` to generate the dataset.
 
 ---
 
