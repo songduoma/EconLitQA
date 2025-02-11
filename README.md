@@ -163,4 +163,27 @@ The project includes evaluation tools for **Keywords Extraction evaluation**, **
 - **Keywords Extraction evaluation**: Counts evaluation metrics including precision rate, recall rate and f1 score.
 
 - **Faithfulness evaluation**: Splits responses into individual claims and checks whether each is supported by retrieved content.
-- **Answer relevance evaluation**: Uses reverse question generation to assess semantic similarity between the original query 
+- **Answer relevance evaluation**: Uses reverse question generation to assess semantic similarity between the original query and the generated response.
+
+For detailed examples, see the evaluation section in `notebooks/econlitqa_llama.ipynb`.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute within the license terms.
+
+---
+
+## Contact Information
+
+For any questions or suggestions, please contact:
+
+- **Email**: qwerty.a0813@gmail.com
+- **GitHub**: [songduoma](https://github.com/songduoma)
+
+---
+
+Thank you for using EconLitQA! We appreciate your feedback and contributions.
+
+
