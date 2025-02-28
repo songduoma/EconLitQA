@@ -116,8 +116,6 @@ Additionally, the project includes an **evaluation module** to assess response *
    - Create `apikey.txt` and Store your OpenAI API key in it
    - Create `password.txt` and store your HuggingFace API key in it
 
-   > **Note:** These files should remain private. Add them to `.gitignore` to prevent accidental exposure.
-
 ---
 
 ## Usage
